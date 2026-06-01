@@ -275,6 +275,116 @@ body {
   margin-bottom: 32px;
 }
 
+.section-lead {
+  font-size: 17px;
+  color: var(--color-text-muted);
+  text-align: center;
+  max-width: 720px;
+  margin: -32px auto 48px;
+}
+
+.problem { padding: 80px 0; }
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.problem-card {
+  padding: 28px 24px;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius);
+  text-align: center;
+  border: 1px solid var(--color-border);
+}
+
+.problem-icon { font-size: 36px; margin-bottom: 12px; }
+.problem-card h3 { font-size: 18px; margin-bottom: 8px; }
+.problem-card p { font-size: 14px; color: var(--color-text-muted); }
+
+.solution {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f0f9ff 0%, #fff7ed 100%);
+}
+
+.solution-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.solution-item {
+  padding: 32px;
+  background: white;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+}
+
+.solution-item h3 { font-size: 22px; margin-bottom: 12px; }
+.solution-item p { color: var(--color-text-muted); }
+
+.categories {
+  padding: 80px 0;
+  background: var(--color-bg-alt);
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.category-card {
+  padding: 24px 16px;
+  background: white;
+  border-radius: var(--radius);
+  text-align: center;
+  border: 1px solid var(--color-border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.category-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.category-icon { font-size: 32px; margin-bottom: 8px; }
+.category-card h3 { font-size: 15px; font-weight: 500; }
+
+.how-it-works { padding: 80px 0; }
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.step { text-align: center; padding: 16px; }
+
+.step-num {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-orange);
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.step h3 { font-size: 16px; margin-bottom: 8px; }
+.step p { font-size: 14px; color: var(--color-text-muted); }
+
+.features-alt { background: var(--color-bg-alt); }
+
 @media (max-width: 768px) {
   .hero { padding: 60px 0 40px; }
   .hero h1, .product-hero h1 { font-size: 32px; }
